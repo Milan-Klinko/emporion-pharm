@@ -24,7 +24,7 @@
 
             <div class="mt-8 flex justify-between">
                 <a href="{{ route('catalog') }}" class="bg-red-600 text-white py-3 px-8 rounded text-xl">
-                    Nazad na katalog
+                    Nazad na katalog 
                 </a>
                 <a href="/gift" class="bg-green-600 text-white py-4 px-12 rounded text-2xl font-bold">
                     DALJE → Izbor poklona

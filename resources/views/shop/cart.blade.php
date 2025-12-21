@@ -18,7 +18,7 @@
             @endforeach
 
             <div class="mt-8 text-right">
-                <p class="text-3xl font-bold">Ukupno: {{ $total }} RSD</p>
+                <p class="text-3xl font-bold">Ukupno:  {{ $total }} RSD</p>
                 <p class="text-lg text-gray-600 mt-2">(dostava besplatna)</p>
             </div>
 

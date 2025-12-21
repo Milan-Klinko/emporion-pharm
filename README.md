@@ -25,7 +25,7 @@ Laravel 11 aplikacija za naručivanje lekova i suplemenata na kućnu adresu.
 - `order_items` – stavke narudžbine (pivot tabela)
 - `gift_packs` – dostupni poklon paketi
 
-## Instalacija (lokalno)
+## Instalacija (lokalno) P.S. potreban je i instaliran PHP (+add to PATH), Git, Composer, SQLite koji obično dolazi sa PHP-om
 ```bash
 git clone https://github.com/Milan-Klinko/emporion-pharm.git
 cd emporion-pharm

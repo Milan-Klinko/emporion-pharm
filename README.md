@@ -46,4 +46,4 @@ Javne rute:
 
 Autor: Milan Klinko – studentski projekat
 
-Aplikacija dostupna na http://127.0.0.1:8000
+Aplikacija dostupna lokalno na http://127.0.0.1:8000

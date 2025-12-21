@@ -1,0 +1,18 @@
+created:
+    - database/factories/ProductFactory.php
+    - database/factories/OrderFactory.php
+    - database/factories/OrderItemFactory.php
+    - database/factories/GiftPackFactory.php
+    - database/migrations/2025_12_21_172408_create_products_table.php
+    - database/migrations/2025_12_21_172409_create_orders_table.php
+    - database/migrations/2025_12_21_172410_create_order_items_table.php
+    - database/migrations/2025_12_21_172411_create_gift_packs_table.php
+    - app/Models/Product.php
+    - app/Models/Order.php
+    - app/Models/OrderItem.php
+    - app/Models/GiftPack.php
+models:
+    Product: { name: string, category: string, price: 'decimal:8,2', stock: integer, timestamps: timestamps }
+    Order: { order_number: string, customer_name: string, customer_address: string, delivery_date: date, delivery_time: time, total: 'decimal:8,2', voucher_code: 'string:nullable', note: 'text:nullable', gift_selected: 'boolean default:false', status: "string default:'new'", timestamps: timestamps }
+    OrderItem: { quantity: integer, price_per_unit: 'decimal:8,2', relationships: { belongsTo: 'Product Order' } }
+    GiftPack: { name: string, description: text, timestamps: timestamps }

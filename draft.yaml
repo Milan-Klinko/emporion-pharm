@@ -1,0 +1,36 @@
+models:
+  Product:
+    name: string
+    category: string
+    price: decimal:8,2
+    stock: integer
+    timestamps: true
+
+  Order:
+    order_number: string
+    customer_name: string
+    customer_address: string
+    delivery_date: date
+    delivery_time: time
+    total: decimal:8,2
+    voucher_code: string:nullable
+    note: text:nullable
+    gift_selected: boolean default:false
+    status: string default:'new'
+    timestamps: true
+
+  OrderItem:
+    quantity: integer
+    price_per_unit: decimal:8,2
+    relationships:
+      belongsTo:
+        - Product
+        - Order
+
+  GiftPack:
+    name: string
+    description: text
+    timestamps: true
+
+cache:
+  products: Product

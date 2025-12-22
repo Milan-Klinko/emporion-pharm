@@ -12,22 +12,13 @@ class ShopController extends Controller
 {
     public function catalog()
     {
-        $products = collect([
-    (object)['id' => 1, 'name' => 'Vitamin D3 1000 IU', 'price' => 1000, 'stock' => 50],
-    (object)['id' => 2, 'name' => 'Multivitamin kompleks', 'price' => 500, 'stock' => 100],
-    (object)['id' => 3, 'name' => 'Krema za ruke', 'price' => 800, 'stock' => 30],
-    (object)['id' => 4, 'name' => 'Vitamin C 500 mg', 'price' => 1200, 'stock' => 80],
-]);
+        $products = Product::all();
         return view('shop.catalog', compact('products'));
     }
 
     public function gift()
     {
-        $giftPacks = collect([
-    (object)['id' => 1, 'name' => 'Imunitet booster', 'description' => 'Vitamin C + Cink + Echinacea'],
-    (object)['id' => 2, 'name' => 'Energija paket', 'description' => 'B-kompleks + Magnezijum'],
-    (object)['id' => 3, 'name' => 'Relax paket', 'description' => 'Magnezijum + Valerijana'],
-]);
+        $giftPacks = GiftPack::all();
         return view('shop.gift', compact('giftPacks'));
     }
 

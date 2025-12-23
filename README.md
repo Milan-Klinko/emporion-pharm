@@ -46,11 +46,11 @@ Aplikacija dostupna lokalno na http://127.0.0.1:8000
 
 ## Javne rute:
 
-/ → Katalog proizvoda
-/cart → Pregled korpe
-/gift → Izbor poklona
-/checkout → Forma za dostavu
-/order (POST) → Kreiranje narudžbine
-/employee → Pregled narudžbina za zaposlene
+- / → Katalog proizvoda
+- /cart → Pregled korpe
+- /gift → Izbor poklona
+- /checkout → Forma za dostavu
+- /order (POST) → Kreiranje narudžbine
+- /employee → Pregled narudžbina za zaposlene
 
-Autor: Milan Klinko – studentski projekat
+## Autor: Milan Klinko – studentski projekat

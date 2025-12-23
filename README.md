@@ -25,30 +25,26 @@ Laravel 11 aplikacija za naručivanje lekova i suplemenata na kućnu adresu.
 - `order_items` – stavke narudžbine (pivot tabela)
 - `gift_packs` – dostupni poklon paketi
 
-## Instalacija (lokalno)
-```bash
-
-**Neophodni preduslovi:**
-Računar *mora* imati instalirane sledeće alate:
+## Neophodni preduslovi:
+Računar mora imati instalirane sledeće alate:
 - PHP (verzija 8.2 ili novija)
 - Composer
 - Git
 
 ### Uputstvo za instalaciju na Windowsu (CMD ili PowerShell):
-
-   ```bash
 git clone https://github.com/Milan-Klinko/emporion-pharm.git
 cd emporion-pharm
 composer install
 copy .env.example .env
 php artisan key:generate
+Otvorite .env fajl u root folderu projekta i promenite liniju SESSION_DRIVER=database u SESSION_DRIVER=file
 type nul > database\database.sqlite
 php artisan migrate:fresh --seed
 php artisan serve
 
 Aplikacija dostupna lokalno na http://127.0.0.1:8000
 
-Javne rute:
+## Javne rute:
 
 / → Katalog proizvoda
 /cart → Pregled korpe

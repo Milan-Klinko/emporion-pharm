@@ -27,7 +27,7 @@ Laravel 11 aplikacija za naručivanje lekova i suplemenata na kućnu adresu.
 
 ## Neophodni preduslovi:
 Računar mora imati instalirane sledeće alate:
-- PHP (verzija 8.2 ili novija)
+- PHP
 - Composer
 - Git
 

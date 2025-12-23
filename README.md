@@ -25,15 +25,28 @@ Laravel 11 aplikacija za naručivanje lekova i suplemenata na kućnu adresu.
 - `order_items` – stavke narudžbine (pivot tabela)
 - `gift_packs` – dostupni poklon paketi
 
-## Instalacija (lokalno) P.S. potreban je i instaliran PHP (+add to PATH), Git, Composer, SQLite koji obično dolazi sa PHP-om
+## Instalacija (lokalno)
 ```bash
-git clone https://github.com/Milan-Klinko/emporion-pharm
+
+**Neophodni preduslovi:**
+Računar *mora* imati instalirane sledeće alate:
+- PHP (verzija 8.2 ili novija)
+- Composer
+- Git
+
+### Uputstvo za instalaciju na Windowsu (CMD ili PowerShell):
+
+   ```bash
+git clone https://github.com/Milan-Klinko/emporion-pharm.git
 cd emporion-pharm
 composer install
-cp .env.example .env
+copy .env.example .env
 php artisan key:generate
+type nul > database\database.sqlite
 php artisan migrate:fresh --seed
 php artisan serve
+
+Aplikacija dostupna lokalno na http://127.0.0.1:8000
 
 Javne rute:
 
@@ -45,5 +58,3 @@ Javne rute:
 /employee → Pregled narudžbina za zaposlene
 
 Autor: Milan Klinko – studentski projekat
-
-Aplikacija dostupna lokalno na http://127.0.0.1:8000

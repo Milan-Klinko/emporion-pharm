@@ -32,15 +32,15 @@ Računar mora imati instalirane sledeće alate:
 - Git
 
 ### Uputstvo za instalaciju na Windowsu (CMD ili PowerShell):
-git clone https://github.com/Milan-Klinko/emporion-pharm.git
-cd emporion-pharm
-composer install
-copy .env.example .env
-php artisan key:generate
-Otvorite .env fajl u root folderu projekta i promenite liniju SESSION_DRIVER=database u SESSION_DRIVER=file
-type nul > database\database.sqlite
-php artisan migrate:fresh --seed
-php artisan serve
+- git clone https://github.com/Milan-Klinko/emporion-pharm.git
+- cd emporion-pharm
+- composer install
+- copy .env.example .env
+- php artisan key:generate
+- Otvorite .env fajl u root folderu projekta i promenite liniju SESSION_DRIVER=database u SESSION_DRIVER=file
+- type nul > database\database.sqlite
+- php artisan migrate:fresh --seed
+- php artisan serve
 
 Aplikacija dostupna lokalno na http://127.0.0.1:8000
 
